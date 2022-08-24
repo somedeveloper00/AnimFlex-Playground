@@ -12,3 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c527224808e34ffea382be74fc613986, type: 3}
   m_Name: AnimFlexSettings
   m_EditorClassIdentifier: 
+  deltaTimeIgnoreThreshold: 0.2
+  maxMillisecondsForTweenUpdate: 10
