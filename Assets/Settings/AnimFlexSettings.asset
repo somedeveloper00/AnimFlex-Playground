@@ -13,4 +13,8 @@ MonoBehaviour:
   m_Name: AnimFlexSettings
   m_EditorClassIdentifier: 
   deltaTimeIgnoreThreshold: 0.2
-  maxMillisecondsForTweenUpdate: 10
+  maxTweenDeletionPerFrame: 10
+  maxTweenCount: 1048576
+  easeLowQualitySampleCount: 50
+  easeMediumQualitySampleCount: 100
+  easeHighQualitySampleCount: 200
