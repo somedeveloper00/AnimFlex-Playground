@@ -2359,14 +2359,51 @@ MonoBehaviour:
   m_GameObject: {fileID: 2012731670}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8965c2b594e54cd6bf03c79ba9591c83, type: 3}
+  m_Script: {fileID: 11500000, guid: 047e8afad3c64e64b1323784efd490e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   playOnStart: 1
-  nodes: []
+  sequence:
+    nodes:
+    - inspectorColor: {r: 0, g: 0, b: 0, a: 0}
+      groupName: 
+      name: Node 0
+      delay: 1
+      clip:
+        rid: 1799262324752384003
+      playNextAfterFinish: 1
+      nextIndices: 
+    - inspectorColor: {r: 0, g: 0, b: 0, a: 0}
+      groupName: 
+      name: Node 1
+      delay: 1
+      clip:
+        rid: 1799262324752384004
+      playNextAfterFinish: 1
+      nextIndices: 
+    - inspectorColor: {r: 0, g: 0, b: 0, a: 0}
+      groupName: 
+      name: Node 2
+      delay: 1
+      clip:
+        rid: 1799262324752384005
+      playNextAfterFinish: 0
+      nextIndices: 02000000
   references:
     version: 2
-    RefIds: []
+    RefIds:
+    - rid: 1799262324752384003
+      type: {class: CLog, ns: AnimFlex.Sequencer.Clips, asm: AnimFlex}
+      data:
+        message: 1
+    - rid: 1799262324752384004
+      type: {class: CLog, ns: AnimFlex.Sequencer.Clips, asm: AnimFlex}
+      data:
+        message: 2
+    - rid: 1799262324752384005
+      type: {class: CLog, ns: AnimFlex.Sequencer.Clips, asm: AnimFlex}
+      data:
+        message: repeat
 --- !u!1001 &2084170069
 PrefabInstance:
   m_ObjectHideFlags: 0
