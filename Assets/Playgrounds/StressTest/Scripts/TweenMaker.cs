@@ -1,15 +1,11 @@
 ﻿using System;
 using System.Collections;
-using AnimFlex.Tweener;
-using DG.Tweening;
 using UnityEngine;
 using UnityEngine.Profiling;
 using Tweener = AnimFlex.Tweener.Tweener;
 
 public class TweenMaker : MonoBehaviour
 {
-    public bool useDotween = false;
-    
     public int count;
     public float createPerFrame;
     public float duration;
@@ -40,29 +36,16 @@ public class TweenMaker : MonoBehaviour
                 Action onComplete = () => totalActive--;
                 if (i == count - 1)
                     onComplete += () => isFinished = true;
-                
-                if (useDotween)
-                {
-                    Vector3 pos = Vector3.left;
-                    var tween = DOTween.To(
-                        getter: () => pos,
-                        setter: (value) => pos = value,
-                        duration: duration,
-                        endValue: Vector3.right);
-                    tween.onComplete += () => onComplete();
-                }
-                else
-                {
-                    Profiler.BeginSample("Creating Tween");
-                    Vector3 pos = Vector3.left;
-                    var tween = Tweener.Generate(
-                        getter: () => pos,
-                        setter: (value) => pos = value,
-                        duration: duration,
-                        endValue: Vector3.right);
-                    tween.onComplete += onComplete;
-                    Profiler.EndSample();
-                }
+
+                Profiler.BeginSample("Creating Tween");
+                Vector3 pos = Vector3.left;
+                var tween = Tweener.Generate(
+                    getter: () => pos,
+                    setter: (value) => pos = value,
+                    duration: duration,
+                    endValue: Vector3.right);
+                tween.onComplete += onComplete;
+                Profiler.EndSample();
 
                 if (++createdThisFrame >= createPerFrame)
                 {
