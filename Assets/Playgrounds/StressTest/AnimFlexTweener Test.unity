@@ -360,6 +360,12 @@ MonoBehaviour:
     targetColor: {r: 0, g: 0, b: 0, a: 0}
     targetTransform: {fileID: 0}
     targetQuaternion: {x: 0, y: 0, z: 0, w: 0}
+    customCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
     useQuaternion: 0
     relative: 0
     ease: 1
@@ -453,7 +459,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.48593807, g: 0.5283019, b: 0.51876384, a: 0.4745098}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.6509804}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -499,6 +505,12 @@ MonoBehaviour:
     targetColor: {r: 0, g: 0, b: 0, a: 0}
     targetTransform: {fileID: 0}
     targetQuaternion: {x: 0, y: 0, z: 0, w: 0}
+    customCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
     useQuaternion: 0
     relative: 0
     ease: 1
@@ -1144,57 +1156,46 @@ MonoBehaviour:
   m_GameObject: {fileID: 671647975}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8965c2b594e54cd6bf03c79ba9591c83, type: 3}
+  m_Script: {fileID: 11500000, guid: 047e8afad3c64e64b1323784efd490e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   playOnStart: 1
-  nodes:
-  - inspectorColor: {r: 0, g: 0, b: 0, a: 0}
-    groupName: 
-    name: wait for finish
-    delay: 0
-    clip:
-      rid: 1799262294186917888
-    playNextAfterFinish: 1
-    nextIndices: 
-  - inspectorColor: {r: 0, g: 0, b: 0, a: 0}
-    groupName: 
-    name: show results
-    delay: 0
-    clip:
-      rid: 1799262294186917889
-    playNextAfterFinish: 1
-    nextIndices: 
+  sequence:
+    nodes:
+    - inspectorColor: {r: 0, g: 0, b: 0, a: 0}
+      groupName: 
+      name: finish check
+      delay: 0
+      clip:
+        rid: 1799262324752384030
+      playNextAfterFinish: 1
+      nextIndices: 
+    - inspectorColor: {r: 0, g: 0, b: 0, a: 0}
+      groupName: 
+      name: show results
+      delay: 0
+      clip:
+        rid: 1799262324752384031
+      playNextAfterFinish: 1
+      nextIndices: 
   references:
     version: 2
     RefIds:
-    - rid: 1799262294186917888
+    - rid: 1799262324752384030
       type: {class: CWaitUntilBool, ns: AnimFlex.Sequencer.Clips, asm: AnimFlex}
       data:
         valueName: isFinished
         component: {fileID: 2716658515182641925}
         checkEvery: 1
         value: 1
-    - rid: 1799262294186917889
+    - rid: 1799262324752384031
       type: {class: CEvent, ns: AnimFlex.Sequencer.Clips, asm: AnimFlex}
       data:
         Event:
           m_PersistentCalls:
             m_Calls:
-            - m_Target: {fileID: 961384261}
-              m_TargetAssemblyTypeName: AnimFlex.Tweener.TweenerAnim, AnimFlex
-              m_MethodName: PlayOrRestart
-              m_Mode: 1
-              m_Arguments:
-                m_ObjectArgument: {fileID: 0}
-                m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-                m_IntArgument: 0
-                m_FloatArgument: 0
-                m_StringArgument: 
-                m_BoolArgument: 1
-              m_CallState: 2
             - m_Target: {fileID: 117499266}
-              m_TargetAssemblyTypeName: ProfileSaver, Assembly-CSharp
+              m_TargetAssemblyTypeName: ProfileSaver, StressTest
               m_MethodName: Stop
               m_Mode: 1
               m_Arguments:
@@ -1203,11 +1204,11 @@ MonoBehaviour:
                 m_IntArgument: 0
                 m_FloatArgument: 0
                 m_StringArgument: 
-                m_BoolArgument: 1
+                m_BoolArgument: 0
               m_CallState: 2
-            - m_Target: {fileID: 117499266}
-              m_TargetAssemblyTypeName: DefaultNamespace.ProfileSaver, TweenerPlayground
-              m_MethodName: ShowResults
+            - m_Target: {fileID: 961384261}
+              m_TargetAssemblyTypeName: AnimFlex.Tweener.TweenerAnim, AnimFlex
+              m_MethodName: PlayOrRestart
               m_Mode: 1
               m_Arguments:
                 m_ObjectArgument: {fileID: 0}
@@ -1867,7 +1868,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.48593807, g: 0.5283019, b: 0.51876384, a: 0.4745098}
+  m_Color: {r: 0.11320752, g: 0.11320752, b: 0.11320752, a: 0.9490196}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1925,6 +1926,12 @@ MonoBehaviour:
     targetColor: {r: 0, g: 0, b: 0, a: 0}
     targetTransform: {fileID: 0}
     targetQuaternion: {x: 0, y: 0, z: 0, w: 0}
+    customCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
     useQuaternion: 0
     relative: 0
     ease: 0
