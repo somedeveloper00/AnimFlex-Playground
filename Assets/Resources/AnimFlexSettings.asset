@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c527224808e34ffea382be74fc613986, type: 3}
   m_Name: AnimFlexSettings
   m_EditorClassIdentifier: 
+  sequenceMaxCapacity: 1024
   deltaTimeIgnoreThreshold: 0.2
   maxTweenDeletionPerFrame: 5
   maxTweenCount: 32768
   easeSampleCount: 256
-  period: 0
-  overShoot: 1.70158
+  period: 0.45
+  overShoot: 1.5

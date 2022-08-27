@@ -92,14 +92,7 @@ public class ProfileSaver : MonoBehaviour
         start.UseShellExecute = false;
         start.RedirectStandardError = true;
         start.CreateNoWindow = true;
-        
-        using (Process process = Process.Start(start))
-        {
-            using (StreamReader reader = process.StandardOutput)
-            {
-                string result = reader.ReadToEnd();
-                Debug.Log(result);
-            }
-        }
+
+        Process process = Process.Start(start);
     }
 }

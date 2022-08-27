@@ -15,7 +15,7 @@ public class TweenMaker : MonoBehaviour
 
 
         
-    [NonSerialized] public int totalCreated = 0;
+    [NonSerialized] public long totalCreated = 0;
     [NonSerialized] public int totalActive = 0;
     
     private void Start() => Spawn();

@@ -1,13 +1,17 @@
-﻿using System;
-using System.Linq;
-using Unity.VisualScripting;
+﻿using System.Linq;
 using UnityEngine;
 
 namespace Playgrounds.Playground1.Scripts
 {
     public class LookAt : MonoBehaviour
     {
-        public Transform[] target;
+        public Transform[] targetParents;
+        private Transform[] target;
+
+        private void Start()
+        {
+            target = targetParents.SelectMany(t => t.GetComponentsInChildren<Transform>()).ToArray();
+        }
 
         private void Update()
         {
