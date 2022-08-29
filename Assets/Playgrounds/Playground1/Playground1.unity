@@ -236,9 +236,14 @@ MonoBehaviour:
     useCurve: 0
     useQuaternion: 0
     relative: 1
+    useTargetTransform: 0
+    from: 0
     ease: 27
     duration: 5
     delay: 2
+    pingPong: 0
+    loops: 0
+    loopDelay: 0
     onStart:
       m_PersistentCalls:
         m_Calls: []
@@ -294,9 +299,14 @@ MonoBehaviour:
     useCurve: 0
     useQuaternion: 0
     relative: 1
+    useTargetTransform: 0
+    from: 0
     ease: 3
     duration: 1
     delay: 1
+    pingPong: 0
+    loops: 0
+    loopDelay: 0
     onStart:
       m_PersistentCalls:
         m_Calls: []
@@ -322,6 +332,124 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   playOnStart: 0
+--- !u!1001 &120257190
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 5215ed95d1771c547afc366885ee1872, type: 3}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5215ed95d1771c547afc366885ee1872, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5.96
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5215ed95d1771c547afc366885ee1872, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.77
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5215ed95d1771c547afc366885ee1872, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 15.64
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5215ed95d1771c547afc366885ee1872, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5215ed95d1771c547afc366885ee1872, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5215ed95d1771c547afc366885ee1872, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5215ed95d1771c547afc366885ee1872, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5215ed95d1771c547afc366885ee1872, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5215ed95d1771c547afc366885ee1872, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5215ed95d1771c547afc366885ee1872, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5215ed95d1771c547afc366885ee1872, type: 3}
+      propertyPath: m_Name
+      value: rounded-rect
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5215ed95d1771c547afc366885ee1872, type: 3}
+--- !u!1 &120257191 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 5215ed95d1771c547afc366885ee1872, type: 3}
+  m_PrefabInstance: {fileID: 120257190}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &120257192
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 120257191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bb0360af51242589913841fc71016a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  generatorData:
+    fromObject: {fileID: 120257191}
+    tweenerType: 2
+    targetVector3: {x: 360, y: 360, z: -90}
+    targetVector2: {x: 0, y: 0}
+    targetFloat: 0
+    targetColor: {r: 0, g: 0, b: 0, a: 0}
+    targetTransform: {fileID: 0}
+    targetQuaternion: {x: 0, y: 0, z: 0, w: 0}
+    customCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    useCurve: 0
+    useQuaternion: 0
+    relative: 0
+    useTargetTransform: 0
+    from: 0
+    ease: 3
+    duration: 4
+    delay: 0
+    pingPong: 1
+    loops: 3
+    loopDelay: 0
+    onStart:
+      m_PersistentCalls:
+        m_Calls: []
+    onUpdate:
+      m_PersistentCalls:
+        m_Calls: []
+    onComplete:
+      m_PersistentCalls:
+        m_Calls: []
+    onKill:
+      m_PersistentCalls:
+        m_Calls: []
+  playOnStart: 1
+--- !u!4 &120257193 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 5215ed95d1771c547afc366885ee1872, type: 3}
+  m_PrefabInstance: {fileID: 120257190}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &234840449
 GameObject:
   m_ObjectHideFlags: 0
@@ -704,9 +832,14 @@ MonoBehaviour:
     useCurve: 0
     useQuaternion: 0
     relative: 1
+    useTargetTransform: 0
+    from: 0
     ease: 12
     duration: 5
     delay: 2
+    pingPong: 0
+    loops: 0
+    loopDelay: 0
     onStart:
       m_PersistentCalls:
         m_Calls: []
@@ -762,9 +895,14 @@ MonoBehaviour:
     useCurve: 0
     useQuaternion: 0
     relative: 1
+    useTargetTransform: 0
+    from: 0
     ease: 3
     duration: 1
     delay: 1
+    pingPong: 0
+    loops: 0
+    loopDelay: 0
     onStart:
       m_PersistentCalls:
         m_Calls: []
@@ -903,30 +1041,35 @@ MonoBehaviour:
     useCurve: 0
     useQuaternion: 0
     relative: 1
+    useTargetTransform: 0
+    from: 0
     ease: 27
     duration: 3
     delay: 0.5
+    pingPong: 0
+    loops: 0
+    loopDelay: 0
     onStart:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: 
+          m_MethodName: 
+          m_Mode: 0
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: 
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 0
     onUpdate:
       m_PersistentCalls:
         m_Calls: []
     onComplete:
       m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 356233762}
-          m_TargetAssemblyTypeName: AnimFlex.Tweener.TweenerAnim, AnimFlex
-          m_MethodName: PlayOrRestart
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 1
+        m_Calls: []
     onKill:
       m_PersistentCalls:
         m_Calls: []
@@ -961,9 +1104,14 @@ MonoBehaviour:
     useCurve: 0
     useQuaternion: 0
     relative: 1
+    useTargetTransform: 0
+    from: 0
     ease: 12
     duration: 3
     delay: 1
+    pingPong: 0
+    loops: 0
+    loopDelay: 0
     onStart:
       m_PersistentCalls:
         m_Calls: []
@@ -1133,9 +1281,14 @@ MonoBehaviour:
     useCurve: 0
     useQuaternion: 0
     relative: 1
+    useTargetTransform: 0
+    from: 0
     ease: 12
     duration: 4
     delay: 0.3
+    pingPong: 0
+    loops: 0
+    loopDelay: 0
     onStart:
       m_PersistentCalls:
         m_Calls: []
@@ -1191,9 +1344,14 @@ MonoBehaviour:
     useCurve: 0
     useQuaternion: 0
     relative: 1
+    useTargetTransform: 0
+    from: 0
     ease: 3
     duration: 3
     delay: 0.5
+    pingPong: 0
+    loops: 0
+    loopDelay: 0
     onStart:
       m_PersistentCalls:
         m_Calls: []
@@ -1332,9 +1490,14 @@ MonoBehaviour:
     useCurve: 0
     useQuaternion: 0
     relative: 1
+    useTargetTransform: 0
+    from: 0
     ease: 27
     duration: 3
     delay: 0.5
+    pingPong: 0
+    loops: 0
+    loopDelay: 0
     onStart:
       m_PersistentCalls:
         m_Calls: []
@@ -1390,9 +1553,14 @@ MonoBehaviour:
     useCurve: 0
     useQuaternion: 0
     relative: 1
+    useTargetTransform: 0
+    from: 0
     ease: 12
     duration: 3
     delay: 1
+    pingPong: 0
+    loops: 0
+    loopDelay: 0
     onStart:
       m_PersistentCalls:
         m_Calls: []
@@ -1531,9 +1699,14 @@ MonoBehaviour:
     useCurve: 0
     useQuaternion: 0
     relative: 1
+    useTargetTransform: 0
+    from: 0
     ease: 12
     duration: 3
     delay: 1
+    pingPong: 0
+    loops: 0
+    loopDelay: 0
     onStart:
       m_PersistentCalls:
         m_Calls: []
@@ -1589,9 +1762,14 @@ MonoBehaviour:
     useCurve: 0
     useQuaternion: 0
     relative: 1
+    useTargetTransform: 0
+    from: 0
     ease: 3
     duration: 3
     delay: 0.1
+    pingPong: 0
+    loops: 0
+    loopDelay: 0
     onStart:
       m_PersistentCalls:
         m_Calls: []
@@ -1770,16 +1948,39 @@ MonoBehaviour:
     targetQuaternion: {x: 0, y: 0, z: 0, w: 0}
     customCurve:
       serializedVersion: 2
-      m_Curve: []
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 2
+        outSlope: 2
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    useCurve: 0
+    useCurve: 1
     useQuaternion: 0
     relative: 1
-    ease: 27
-    duration: 3
-    delay: 0.5
+    useTargetTransform: 0
+    from: 0
+    ease: 3
+    duration: 0.5
+    delay: 0
+    pingPong: 0
+    loops: 0
+    loopDelay: 0
     onStart:
       m_PersistentCalls:
         m_Calls: []
@@ -1788,19 +1989,7 @@ MonoBehaviour:
         m_Calls: []
     onComplete:
       m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 456269369}
-          m_TargetAssemblyTypeName: AnimFlex.Tweener.TweenerAnim, AnimFlex
-          m_MethodName: PlayOrRestart
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 1
+        m_Calls: []
     onKill:
       m_PersistentCalls:
         m_Calls: []
@@ -1835,9 +2024,14 @@ MonoBehaviour:
     useCurve: 0
     useQuaternion: 0
     relative: 1
+    useTargetTransform: 0
+    from: 0
     ease: 12
     duration: 4
     delay: 0.3
+    pingPong: 0
+    loops: 0
+    loopDelay: 0
     onStart:
       m_PersistentCalls:
         m_Calls: []
@@ -1976,9 +2170,14 @@ MonoBehaviour:
     useCurve: 0
     useQuaternion: 0
     relative: 1
+    useTargetTransform: 0
+    from: 0
     ease: 27
     duration: 5
     delay: 2
+    pingPong: 0
+    loops: 0
+    loopDelay: 0
     onStart:
       m_PersistentCalls:
         m_Calls: []
@@ -2034,9 +2233,14 @@ MonoBehaviour:
     useCurve: 0
     useQuaternion: 0
     relative: 1
+    useTargetTransform: 0
+    from: 0
     ease: 3
     duration: 1
     delay: 1
+    pingPong: 0
+    loops: 0
+    loopDelay: 0
     onStart:
       m_PersistentCalls:
         m_Calls: []
@@ -2175,9 +2379,14 @@ MonoBehaviour:
     useCurve: 0
     useQuaternion: 0
     relative: 1
+    useTargetTransform: 0
+    from: 0
     ease: 12
     duration: 5
     delay: 2
+    pingPong: 0
+    loops: 0
+    loopDelay: 0
     onStart:
       m_PersistentCalls:
         m_Calls: []
@@ -2233,9 +2442,14 @@ MonoBehaviour:
     useCurve: 0
     useQuaternion: 0
     relative: 1
+    useTargetTransform: 0
+    from: 0
     ease: 3
     duration: 1
     delay: 1
+    pingPong: 0
+    loops: 0
+    loopDelay: 0
     onStart:
       m_PersistentCalls:
         m_Calls: []
@@ -2412,9 +2626,14 @@ MonoBehaviour:
     useCurve: 0
     useQuaternion: 0
     relative: 1
+    useTargetTransform: 0
+    from: 0
     ease: 12
     duration: 3
     delay: 1
+    pingPong: 0
+    loops: 0
+    loopDelay: 0
     onStart:
       m_PersistentCalls:
         m_Calls: []
@@ -2470,9 +2689,14 @@ MonoBehaviour:
     useCurve: 0
     useQuaternion: 0
     relative: 1
+    useTargetTransform: 0
+    from: 0
     ease: 3
     duration: 3
     delay: 0.1
+    pingPong: 0
+    loops: 0
+    loopDelay: 0
     onStart:
       m_PersistentCalls:
         m_Calls: []
@@ -2611,9 +2835,14 @@ MonoBehaviour:
     useCurve: 0
     useQuaternion: 0
     relative: 1
+    useTargetTransform: 0
+    from: 0
     ease: 12
     duration: 5
     delay: 2
+    pingPong: 0
+    loops: 0
+    loopDelay: 0
     onStart:
       m_PersistentCalls:
         m_Calls: []
@@ -2669,9 +2898,14 @@ MonoBehaviour:
     useCurve: 0
     useQuaternion: 0
     relative: 1
+    useTargetTransform: 0
+    from: 0
     ease: 3
     duration: 1
     delay: 1
+    pingPong: 0
+    loops: 0
+    loopDelay: 0
     onStart:
       m_PersistentCalls:
         m_Calls: []
@@ -2977,9 +3211,14 @@ MonoBehaviour:
     useCurve: 0
     useQuaternion: 0
     relative: 1
+    useTargetTransform: 0
+    from: 0
     ease: 12
     duration: 3
     delay: 1
+    pingPong: 0
+    loops: 0
+    loopDelay: 0
     onStart:
       m_PersistentCalls:
         m_Calls: []
@@ -3035,9 +3274,14 @@ MonoBehaviour:
     useCurve: 0
     useQuaternion: 0
     relative: 1
+    useTargetTransform: 0
+    from: 0
     ease: 3
     duration: 3
     delay: 0.1
+    pingPong: 0
+    loops: 0
+    loopDelay: 0
     onStart:
       m_PersistentCalls:
         m_Calls: []
@@ -3332,9 +3576,14 @@ MonoBehaviour:
     useCurve: 0
     useQuaternion: 0
     relative: 1
+    useTargetTransform: 0
+    from: 0
     ease: 12
     duration: 3
     delay: 1
+    pingPong: 0
+    loops: 0
+    loopDelay: 0
     onStart:
       m_PersistentCalls:
         m_Calls: []
@@ -3390,9 +3639,14 @@ MonoBehaviour:
     useCurve: 0
     useQuaternion: 0
     relative: 1
+    useTargetTransform: 0
+    from: 0
     ease: 3
     duration: 3
     delay: 0.1
+    pingPong: 0
+    loops: 0
+    loopDelay: 0
     onStart:
       m_PersistentCalls:
         m_Calls: []
@@ -3596,9 +3850,14 @@ MonoBehaviour:
     useCurve: 0
     useQuaternion: 0
     relative: 1
+    useTargetTransform: 0
+    from: 0
     ease: 12
     duration: 4
     delay: 0.3
+    pingPong: 0
+    loops: 0
+    loopDelay: 0
     onStart:
       m_PersistentCalls:
         m_Calls: []
@@ -3654,9 +3913,14 @@ MonoBehaviour:
     useCurve: 0
     useQuaternion: 0
     relative: 1
+    useTargetTransform: 0
+    from: 0
     ease: 3
     duration: 3
     delay: 0.5
+    pingPong: 0
+    loops: 0
+    loopDelay: 0
     onStart:
       m_PersistentCalls:
         m_Calls: []
@@ -3682,6 +3946,192 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   playOnStart: 0
+--- !u!1001 &1019451461
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 5215ed95d1771c547afc366885ee1872, type: 3}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5215ed95d1771c547afc366885ee1872, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5215ed95d1771c547afc366885ee1872, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5215ed95d1771c547afc366885ee1872, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5215ed95d1771c547afc366885ee1872, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5215ed95d1771c547afc366885ee1872, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5215ed95d1771c547afc366885ee1872, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5215ed95d1771c547afc366885ee1872, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5215ed95d1771c547afc366885ee1872, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5215ed95d1771c547afc366885ee1872, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5215ed95d1771c547afc366885ee1872, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5215ed95d1771c547afc366885ee1872, type: 3}
+      propertyPath: m_Name
+      value: rounded-rect (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5215ed95d1771c547afc366885ee1872, type: 3}
+--- !u!1 &1019451462 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 5215ed95d1771c547afc366885ee1872, type: 3}
+  m_PrefabInstance: {fileID: 1019451461}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1019451463 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8164078558771037576, guid: 5215ed95d1771c547afc366885ee1872, type: 3}
+  m_PrefabInstance: {fileID: 1019451461}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1019451464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1019451462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bb0360af51242589913841fc71016a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  generatorData:
+    fromObject: {fileID: 1019451462}
+    tweenerType: 1
+    targetVector3: {x: 0, y: 0, z: 10}
+    targetVector2: {x: 0, y: 0}
+    targetFloat: 0
+    targetColor: {r: 0, g: 0, b: 0, a: 0}
+    targetTransform: {fileID: 120257193}
+    targetQuaternion: {x: 0, y: 0, z: 0, w: 0}
+    customCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    useCurve: 0
+    useQuaternion: 0
+    relative: 1
+    useTargetTransform: 0
+    from: 0
+    ease: 27
+    duration: 1
+    delay: 0.5
+    pingPong: 1
+    loops: 2
+    loopDelay: 1
+    onStart:
+      m_PersistentCalls:
+        m_Calls: []
+    onUpdate:
+      m_PersistentCalls:
+        m_Calls: []
+    onComplete:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1019451462}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 1
+    onKill:
+      m_PersistentCalls:
+        m_Calls: []
+  playOnStart: 0
+--- !u!114 &1019451465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1019451463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bb0360af51242589913841fc71016a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  generatorData:
+    fromObject: {fileID: 1019451463}
+    tweenerType: 6
+    targetVector3: {x: 0, y: 0, z: 0}
+    targetVector2: {x: 0, y: 0}
+    targetFloat: 0
+    targetColor: {r: 0, g: 0, b: 0, a: 1}
+    targetTransform: {fileID: 0}
+    targetQuaternion: {x: 0, y: 0, z: 0, w: 0}
+    customCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    useCurve: 0
+    useQuaternion: 0
+    relative: 0
+    useTargetTransform: 0
+    from: 0
+    ease: 0
+    duration: 1
+    delay: 0.5
+    pingPong: 0
+    loops: 0
+    loopDelay: 0
+    onStart:
+      m_PersistentCalls:
+        m_Calls: []
+    onUpdate:
+      m_PersistentCalls:
+        m_Calls: []
+    onComplete:
+      m_PersistentCalls:
+        m_Calls: []
+    onKill:
+      m_PersistentCalls:
+        m_Calls: []
+  playOnStart: 1
+--- !u!4 &1019451466 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 5215ed95d1771c547afc366885ee1872, type: 3}
+  m_PrefabInstance: {fileID: 1019451461}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1091507462
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3795,9 +4245,14 @@ MonoBehaviour:
     useCurve: 0
     useQuaternion: 0
     relative: 1
+    useTargetTransform: 0
+    from: 0
     ease: 27
     duration: 4
     delay: 0.3
+    pingPong: 0
+    loops: 0
+    loopDelay: 0
     onStart:
       m_PersistentCalls:
         m_Calls: []
@@ -3853,9 +4308,14 @@ MonoBehaviour:
     useCurve: 0
     useQuaternion: 0
     relative: 1
+    useTargetTransform: 0
+    from: 0
     ease: 3
     duration: 3
     delay: 0.5
+    pingPong: 0
+    loops: 0
+    loopDelay: 0
     onStart:
       m_PersistentCalls:
         m_Calls: []
@@ -4227,9 +4687,14 @@ MonoBehaviour:
     useCurve: 0
     useQuaternion: 0
     relative: 1
+    useTargetTransform: 0
+    from: 0
     ease: 12
     duration: 4
     delay: 0.3
+    pingPong: 0
+    loops: 0
+    loopDelay: 0
     onStart:
       m_PersistentCalls:
         m_Calls: []
@@ -4285,9 +4750,14 @@ MonoBehaviour:
     useCurve: 0
     useQuaternion: 0
     relative: 1
+    useTargetTransform: 0
+    from: 0
     ease: 3
     duration: 3
     delay: 0.5
+    pingPong: 0
+    loops: 0
+    loopDelay: 0
     onStart:
       m_PersistentCalls:
         m_Calls: []
@@ -4426,12 +4896,29 @@ MonoBehaviour:
     useCurve: 0
     useQuaternion: 0
     relative: 1
+    useTargetTransform: 0
+    from: 0
     ease: 27
     duration: 1
     delay: 1
+    pingPong: 0
+    loops: 0
+    loopDelay: 0
     onStart:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: 
+          m_MethodName: 
+          m_Mode: 0
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: 
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 0
     onUpdate:
       m_PersistentCalls:
         m_Calls: []
@@ -4484,9 +4971,14 @@ MonoBehaviour:
     useCurve: 0
     useQuaternion: 0
     relative: 1
+    useTargetTransform: 0
+    from: 0
     ease: 12
     duration: 5
     delay: 2
+    pingPong: 0
+    loops: 0
+    loopDelay: 0
     onStart:
       m_PersistentCalls:
         m_Calls: []
@@ -4625,9 +5117,14 @@ MonoBehaviour:
     useCurve: 0
     useQuaternion: 0
     relative: 1
+    useTargetTransform: 0
+    from: 0
     ease: 27
     duration: 3
     delay: 0.5
+    pingPong: 0
+    loops: 0
+    loopDelay: 0
     onStart:
       m_PersistentCalls:
         m_Calls: []
@@ -4683,9 +5180,14 @@ MonoBehaviour:
     useCurve: 0
     useQuaternion: 0
     relative: 1
+    useTargetTransform: 0
+    from: 0
     ease: 12
     duration: 3
     delay: 1
+    pingPong: 0
+    loops: 0
+    loopDelay: 0
     onStart:
       m_PersistentCalls:
         m_Calls: []
@@ -4824,9 +5326,14 @@ MonoBehaviour:
     useCurve: 0
     useQuaternion: 0
     relative: 1
+    useTargetTransform: 0
+    from: 0
     ease: 12
     duration: 5
     delay: 2
+    pingPong: 0
+    loops: 0
+    loopDelay: 0
     onStart:
       m_PersistentCalls:
         m_Calls: []
@@ -4882,9 +5389,14 @@ MonoBehaviour:
     useCurve: 0
     useQuaternion: 0
     relative: 1
+    useTargetTransform: 0
+    from: 0
     ease: 3
     duration: 1
     delay: 1
+    pingPong: 0
+    loops: 0
+    loopDelay: 0
     onStart:
       m_PersistentCalls:
         m_Calls: []
@@ -5023,9 +5535,14 @@ MonoBehaviour:
     useCurve: 0
     useQuaternion: 0
     relative: 1
+    useTargetTransform: 0
+    from: 0
     ease: 27
     duration: 3
     delay: 1
+    pingPong: 0
+    loops: 0
+    loopDelay: 0
     onStart:
       m_PersistentCalls:
         m_Calls: []
@@ -5081,9 +5598,14 @@ MonoBehaviour:
     useCurve: 0
     useQuaternion: 0
     relative: 1
+    useTargetTransform: 0
+    from: 0
     ease: 3
     duration: 3
     delay: 0.1
+    pingPong: 0
+    loops: 0
+    loopDelay: 0
     onStart:
       m_PersistentCalls:
         m_Calls: []
@@ -5327,25 +5849,48 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   generatorData:
     fromObject: {fileID: 1419393916}
-    tweenerType: 0
-    targetVector3: {x: 0, y: 0, z: -15}
+    tweenerType: 1
+    targetVector3: {x: 0, y: 0, z: 20}
     targetVector2: {x: 0, y: 0}
-    targetFloat: 0
+    targetFloat: 1.35
     targetColor: {r: 0, g: 0, b: 0, a: 0}
-    targetTransform: {fileID: 0}
+    targetTransform: {fileID: 430000589}
     targetQuaternion: {x: 0, y: 0, z: 0, w: 0}
     customCurve:
       serializedVersion: 2
-      m_Curve: []
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 2
+        outSlope: 2
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
     useCurve: 0
     useQuaternion: 0
     relative: 1
-    ease: 27
+    useTargetTransform: 0
+    from: 0
+    ease: 3
     duration: 3
     delay: 0.1
+    pingPong: 0
+    loops: 0
+    loopDelay: 0
     onStart:
       m_PersistentCalls:
         m_Calls: []
@@ -5401,9 +5946,14 @@ MonoBehaviour:
     useCurve: 0
     useQuaternion: 0
     relative: 1
+    useTargetTransform: 0
+    from: 0
     ease: 12
     duration: 3
     delay: 1
+    pingPong: 0
+    loops: 0
+    loopDelay: 0
     onStart:
       m_PersistentCalls:
         m_Calls: []
@@ -5542,9 +6092,14 @@ MonoBehaviour:
     useCurve: 0
     useQuaternion: 0
     relative: 1
+    useTargetTransform: 0
+    from: 0
     ease: 27
     duration: 3
     delay: 1
+    pingPong: 0
+    loops: 0
+    loopDelay: 0
     onStart:
       m_PersistentCalls:
         m_Calls: []
@@ -5600,9 +6155,14 @@ MonoBehaviour:
     useCurve: 0
     useQuaternion: 0
     relative: 1
+    useTargetTransform: 0
+    from: 0
     ease: 3
     duration: 3
     delay: 0.1
+    pingPong: 0
+    loops: 0
+    loopDelay: 0
     onStart:
       m_PersistentCalls:
         m_Calls: []
@@ -5741,9 +6301,14 @@ MonoBehaviour:
     useCurve: 0
     useQuaternion: 0
     relative: 1
+    useTargetTransform: 0
+    from: 0
     ease: 27
     duration: 4
     delay: 0.3
+    pingPong: 0
+    loops: 0
+    loopDelay: 0
     onStart:
       m_PersistentCalls:
         m_Calls: []
@@ -5799,9 +6364,14 @@ MonoBehaviour:
     useCurve: 0
     useQuaternion: 0
     relative: 1
+    useTargetTransform: 0
+    from: 0
     ease: 3
     duration: 3
     delay: 0.5
+    pingPong: 0
+    loops: 0
+    loopDelay: 0
     onStart:
       m_PersistentCalls:
         m_Calls: []
@@ -6100,9 +6670,14 @@ MonoBehaviour:
     useCurve: 0
     useQuaternion: 0
     relative: 1
+    useTargetTransform: 0
+    from: 0
     ease: 3
     duration: 3
     delay: 0.5
+    pingPong: 0
+    loops: 0
+    loopDelay: 0
     onStart:
       m_PersistentCalls:
         m_Calls: []
@@ -6158,9 +6733,14 @@ MonoBehaviour:
     useCurve: 0
     useQuaternion: 0
     relative: 1
+    useTargetTransform: 0
+    from: 0
     ease: 12
     duration: 3
     delay: 1
+    pingPong: 0
+    loops: 0
+    loopDelay: 0
     onStart:
       m_PersistentCalls:
         m_Calls: []
@@ -6278,7 +6858,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   generatorData:
     fromObject: {fileID: 613168680}
-    tweenerType: 0
+    tweenerType: 5
     targetVector3: {x: 0, y: 0, z: 15}
     targetVector2: {x: 0, y: 0}
     targetFloat: 0
@@ -6292,14 +6872,43 @@ MonoBehaviour:
       m_PostInfinity: 2
       m_RotationOrder: 4
     useCurve: 0
-    useQuaternion: 0
+    useQuaternion: 1
     relative: 1
+    useTargetTransform: 0
+    from: 0
     ease: 27
     duration: 3
     delay: 1
+    pingPong: 0
+    loops: 0
+    loopDelay: 0
     onStart:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: 
+          m_MethodName: 
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: 
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: 
+          m_MethodName: 
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: 
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
     onUpdate:
       m_PersistentCalls:
         m_Calls: []
@@ -6352,9 +6961,14 @@ MonoBehaviour:
     useCurve: 0
     useQuaternion: 0
     relative: 1
+    useTargetTransform: 0
+    from: 0
     ease: 3
     duration: 3
     delay: 0.5
+    pingPong: 0
+    loops: 0
+    loopDelay: 0
     onStart:
       m_PersistentCalls:
         m_Calls: []
@@ -6493,9 +7107,14 @@ MonoBehaviour:
     useCurve: 0
     useQuaternion: 0
     relative: 1
+    useTargetTransform: 0
+    from: 0
     ease: 12
     duration: 4
     delay: 0.3
+    pingPong: 0
+    loops: 0
+    loopDelay: 0
     onStart:
       m_PersistentCalls:
         m_Calls: []
@@ -6551,9 +7170,14 @@ MonoBehaviour:
     useCurve: 0
     useQuaternion: 0
     relative: 1
+    useTargetTransform: 0
+    from: 0
     ease: 3
     duration: 3
     delay: 0.5
+    pingPong: 0
+    loops: 0
+    loopDelay: 0
     onStart:
       m_PersistentCalls:
         m_Calls: []
@@ -6692,9 +7316,14 @@ MonoBehaviour:
     useCurve: 0
     useQuaternion: 0
     relative: 1
+    useTargetTransform: 0
+    from: 0
     ease: 3
     duration: 3
     delay: 0.5
+    pingPong: 0
+    loops: 0
+    loopDelay: 0
     onStart:
       m_PersistentCalls:
         m_Calls: []
@@ -6750,9 +7379,14 @@ MonoBehaviour:
     useCurve: 0
     useQuaternion: 0
     relative: 1
+    useTargetTransform: 0
+    from: 0
     ease: 12
     duration: 3
     delay: 1
+    pingPong: 0
+    loops: 0
+    loopDelay: 0
     onStart:
       m_PersistentCalls:
         m_Calls: []
@@ -6891,9 +7525,14 @@ MonoBehaviour:
     useCurve: 0
     useQuaternion: 0
     relative: 1
+    useTargetTransform: 0
+    from: 0
     ease: 3
     duration: 3
     delay: 0.5
+    pingPong: 0
+    loops: 0
+    loopDelay: 0
     onStart:
       m_PersistentCalls:
         m_Calls: []
@@ -6949,9 +7588,14 @@ MonoBehaviour:
     useCurve: 0
     useQuaternion: 0
     relative: 1
+    useTargetTransform: 0
+    from: 0
     ease: 12
     duration: 3
     delay: 1
+    pingPong: 0
+    loops: 0
+    loopDelay: 0
     onStart:
       m_PersistentCalls:
         m_Calls: []
@@ -7074,7 +7718,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   generatorData:
     fromObject: {fileID: 1850871602}
-    tweenerType: 0
+    tweenerType: 1
     targetVector3: {x: 0, y: 0, z: 15}
     targetVector2: {x: 0, y: 0}
     targetFloat: 0
@@ -7089,10 +7733,15 @@ MonoBehaviour:
       m_RotationOrder: 4
     useCurve: 0
     useQuaternion: 0
-    relative: 1
+    relative: 0
+    useTargetTransform: 0
+    from: 0
     ease: 27
     duration: 4
     delay: 0.3
+    pingPong: 0
+    loops: 0
+    loopDelay: 0
     onStart:
       m_PersistentCalls:
         m_Calls: []
@@ -7148,9 +7797,14 @@ MonoBehaviour:
     useCurve: 0
     useQuaternion: 0
     relative: 1
+    useTargetTransform: 0
+    from: 0
     ease: 3
     duration: 3
     delay: 0.5
+    pingPong: 0
+    loops: 0
+    loopDelay: 0
     onStart:
       m_PersistentCalls:
         m_Calls: []
@@ -7433,54 +8087,46 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 047e8afad3c64e64b1323784efd490e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playOnStart: 0
+  playOnStart: 1
   sequence:
     nodes:
-    - inspectorColor: {r: 0, g: 0, b: 0, a: 0}
-      groupName: 
-      name: starter log
+    - name: Node 0
       delay: 0
       clip:
-        rid: 1799262335918932161
-      playNextAfterFinish: 1
-      nextIndices: 
-    - inspectorColor: {r: 0, g: 0, b: 0, a: 0}
-      groupName: 
-      name: play tweeners
-      delay: 0.5
+        rid: 2867474223943909434
+    - name: Node 3
+      delay: 0
       clip:
-        rid: 1799262335918932179
-      playNextAfterFinish: 1
-      nextIndices: 
-    - inspectorColor: {r: 0, g: 0, b: 0, a: 0}
-      groupName: 
-      name: end things
-      delay: 100
+        rid: 2867474223943909513
+    - name: Node 4
+      delay: 0.4
       clip:
-        rid: 1799262335918932062
-      playNextAfterFinish: 1
-      nextIndices: 
+        rid: 2867474223943909492
+    - name: Node 1
+      delay: 1
+      clip:
+        rid: 2867474223943909470
+    - name: end
+      delay: 5
+      clip:
+        rid: 2867474223943909514
   references:
     version: 2
     RefIds:
-    - rid: 1799262335918932062
+    - rid: 2867474223943909434
       type: {class: CLog, ns: AnimFlex.Sequencer.Clips, asm: AnimFlex}
       data:
-        message: stopping
-    - rid: 1799262335918932161
-      type: {class: CLog, ns: AnimFlex.Sequencer.Clips, asm: AnimFlex}
-      data:
-        message: started
-    - rid: 1799262335918932179
+        message: 1
+    - rid: 2867474223943909470
       type: {class: CEvent, ns: AnimFlex.Sequencer.Clips, asm: AnimFlex}
       data:
         Event:
           m_PersistentCalls:
             m_Calls:
-            - m_Target: {fileID: 1559379736}
-              m_TargetAssemblyTypeName: AnimFlex.Tweener.TweenerAnim, AnimFlex
-              m_MethodName: PlayOrRestart
-              m_Mode: 1
+            - m_Target: {fileID: 120257191}
+              m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+              m_MethodName: SetActive
+              m_Mode: 6
               m_Arguments:
                 m_ObjectArgument: {fileID: 0}
                 m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -7489,42 +8135,55 @@ MonoBehaviour:
                 m_StringArgument: 
                 m_BoolArgument: 0
               m_CallState: 1
-            - m_Target: {fileID: 0}
-              m_TargetAssemblyTypeName: AnimFlex.Tweener.TweenerAnim, AnimFlex
-              m_MethodName: PlayOrRestart
-              m_Mode: 1
-              m_Arguments:
-                m_ObjectArgument: {fileID: 0}
-                m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-                m_IntArgument: 0
-                m_FloatArgument: 0
-                m_StringArgument: 
-                m_BoolArgument: 0
-              m_CallState: 1
-            - m_Target: {fileID: 0}
-              m_TargetAssemblyTypeName: AnimFlex.Tweener.TweenerAnim, AnimFlex
-              m_MethodName: PlayOrRestart
-              m_Mode: 1
-              m_Arguments:
-                m_ObjectArgument: {fileID: 0}
-                m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-                m_IntArgument: 0
-                m_FloatArgument: 0
-                m_StringArgument: 
-                m_BoolArgument: 0
-              m_CallState: 1
-            - m_Target: {fileID: 0}
-              m_TargetAssemblyTypeName: AnimFlex.Tweener.TweenerAnim, AnimFlex
-              m_MethodName: PlayOrRestart
-              m_Mode: 1
-              m_Arguments:
-                m_ObjectArgument: {fileID: 0}
-                m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-                m_IntArgument: 0
-                m_FloatArgument: 0
-                m_StringArgument: 
-                m_BoolArgument: 0
-              m_CallState: 1
+    - rid: 2867474223943909492
+      type: {class: CTweener, ns: AnimFlex.Sequencer.Clips, asm: AnimFlex}
+      data:
+        data:
+          fromObject: {fileID: 120257191}
+          tweenerType: 1
+          targetVector3: {x: 0, y: 0, z: 0}
+          targetVector2: {x: 0, y: 0}
+          targetFloat: 0
+          targetColor: {r: 0, g: 0, b: 0, a: 0}
+          targetTransform: {fileID: 1019451466}
+          targetQuaternion: {x: 0, y: 0, z: 0, w: 0}
+          customCurve:
+            serializedVersion: 2
+            m_Curve: []
+            m_PreInfinity: 2
+            m_PostInfinity: 2
+            m_RotationOrder: 4
+          useCurve: 0
+          useQuaternion: 0
+          relative: 0
+          useTargetTransform: 1
+          from: 0
+          ease: 9
+          duration: 2
+          delay: 0
+          pingPong: 1
+          loops: 1
+          loopDelay: 0
+          onStart:
+            m_PersistentCalls:
+              m_Calls: []
+          onUpdate:
+            m_PersistentCalls:
+              m_Calls: []
+          onComplete:
+            m_PersistentCalls:
+              m_Calls: []
+          onKill:
+            m_PersistentCalls:
+              m_Calls: []
+    - rid: 2867474223943909513
+      type: {class: CLog, ns: AnimFlex.Sequencer.Clips, asm: AnimFlex}
+      data:
+        message: 2
+    - rid: 2867474223943909514
+      type: {class: CLog, ns: AnimFlex.Sequencer.Clips, asm: AnimFlex}
+      data:
+        message: 
 --- !u!1001 &2053573185
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7638,9 +8297,14 @@ MonoBehaviour:
     useCurve: 0
     useQuaternion: 0
     relative: 1
+    useTargetTransform: 0
+    from: 0
     ease: 27
     duration: 3
     delay: 1
+    pingPong: 0
+    loops: 0
+    loopDelay: 0
     onStart:
       m_PersistentCalls:
         m_Calls: []
@@ -7696,9 +8360,14 @@ MonoBehaviour:
     useCurve: 0
     useQuaternion: 0
     relative: 1
+    useTargetTransform: 0
+    from: 0
     ease: 3
     duration: 3
     delay: 0.1
+    pingPong: 0
+    loops: 0
+    loopDelay: 0
     onStart:
       m_PersistentCalls:
         m_Calls: []
@@ -7899,9 +8568,14 @@ MonoBehaviour:
     useCurve: 0
     useQuaternion: 0
     relative: 1
+    useTargetTransform: 0
+    from: 0
     ease: 27
     duration: 5
     delay: 2
+    pingPong: 0
+    loops: 0
+    loopDelay: 0
     onStart:
       m_PersistentCalls:
         m_Calls: []
@@ -7957,9 +8631,14 @@ MonoBehaviour:
     useCurve: 0
     useQuaternion: 0
     relative: 1
+    useTargetTransform: 0
+    from: 0
     ease: 3
     duration: 1
     delay: 1
+    pingPong: 0
+    loops: 0
+    loopDelay: 0
     onStart:
       m_PersistentCalls:
         m_Calls: []
@@ -8098,9 +8777,14 @@ MonoBehaviour:
     useCurve: 0
     useQuaternion: 0
     relative: 1
+    useTargetTransform: 0
+    from: 0
     ease: 3
     duration: 3
     delay: 0.5
+    pingPong: 0
+    loops: 0
+    loopDelay: 0
     onStart:
       m_PersistentCalls:
         m_Calls: []
@@ -8156,9 +8840,14 @@ MonoBehaviour:
     useCurve: 0
     useQuaternion: 0
     relative: 1
+    useTargetTransform: 0
+    from: 0
     ease: 12
     duration: 3
     delay: 1
+    pingPong: 0
+    loops: 0
+    loopDelay: 0
     onStart:
       m_PersistentCalls:
         m_Calls: []

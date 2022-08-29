@@ -366,11 +366,17 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+    useCurve: 0
     useQuaternion: 0
     relative: 0
+    useTargetTransform: 0
+    from: 0
     ease: 1
     duration: 4
     delay: 0
+    pingPong: 0
+    loops: 0
+    loopDelay: 0
     onStart:
       m_PersistentCalls:
         m_Calls: []
@@ -511,11 +517,17 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+    useCurve: 0
     useQuaternion: 0
     relative: 0
+    useTargetTransform: 0
+    from: 0
     ease: 1
     duration: 1
     delay: 0
+    pingPong: 0
+    loops: 0
+    loopDelay: 0
     onStart:
       m_PersistentCalls:
         m_Calls: []
@@ -1162,22 +1174,14 @@ MonoBehaviour:
   playOnStart: 1
   sequence:
     nodes:
-    - inspectorColor: {r: 0, g: 0, b: 0, a: 0}
-      groupName: 
-      name: finish check
+    - name: finish check
       delay: 0
       clip:
         rid: 1799262324752384030
-      playNextAfterFinish: 1
-      nextIndices: 
-    - inspectorColor: {r: 0, g: 0, b: 0, a: 0}
-      groupName: 
-      name: show results
+    - name: show results
       delay: 0
       clip:
         rid: 1799262324752384031
-      playNextAfterFinish: 1
-      nextIndices: 
   references:
     version: 2
     RefIds:
@@ -1186,7 +1190,7 @@ MonoBehaviour:
       data:
         valueName: isFinished
         component: {fileID: 2716658515182641925}
-        checkEvery: 1
+        checkEvery: 0
         value: 1
     - rid: 1799262324752384031
       type: {class: CEvent, ns: AnimFlex.Sequencer.Clips, asm: AnimFlex}
@@ -1944,11 +1948,17 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+    useCurve: 0
     useQuaternion: 0
     relative: 0
+    useTargetTransform: 0
+    from: 0
     ease: 0
     duration: 0.2
     delay: 0
+    pingPong: 0
+    loops: 0
+    loopDelay: 0
     onStart:
       m_PersistentCalls:
         m_Calls: []
