@@ -1,10 +1,13 @@
-﻿using System.Linq;
+﻿using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 namespace Playgrounds.Playground1.Scripts
 {
     public class LookAt : MonoBehaviour
     {
+        [SerializeField] private bool boolVal;
+        public List<Transform> ta;
         public Transform[] targetParents;
         private Transform[] target;
 
