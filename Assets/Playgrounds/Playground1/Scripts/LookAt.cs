@@ -6,14 +6,20 @@ namespace Playgrounds.Playground1.Scripts
 {
     public class LookAt : MonoBehaviour
     {
-        [SerializeField] private bool boolVal;
-        public List<Transform> ta;
         public Transform[] targetParents;
         private Transform[] target;
 
         private void Start()
         {
-            target = targetParents.SelectMany(t => t.GetComponentsInChildren<Transform>()).ToArray();
+            var r = new List<Transform>();
+            foreach (var targetParent in targetParents)
+            {
+                foreach (Transform trans in targetParent)
+                {
+                    r.Add(trans);
+                }
+            }
+            target = r.ToArray();
         }
 
         private void Update()
