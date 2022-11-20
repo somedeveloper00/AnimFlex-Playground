@@ -2,6 +2,7 @@
 using System.Collections;
 using AnimFlex.Tweening;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.Profiling;
 
 public class TweenMaker : MonoBehaviour
@@ -9,12 +10,8 @@ public class TweenMaker : MonoBehaviour
     public int count;
     public float createPerFrame;
     public float duration;
-        
-    [NonSerialized]
-    public bool isFinished = false;
+    public UnityEvent onComplete;
 
-
-        
     [NonSerialized] public long totalCreated = 0;
     [NonSerialized] public int totalActive = 0;
     
@@ -33,9 +30,9 @@ public class TweenMaker : MonoBehaviour
                 totalCreated++;
                 totalActive++;
 
-                Action onComplete = () => totalActive--;
+                Action onTweenComplete = () => totalActive--;
                 if (i == count - 1)
-                    onComplete += () => isFinished = true;
+                    onTweenComplete += onComplete.Invoke;
 
                 Profiler.BeginSample("Creating Tween");
                 Vector3 pos = Vector3.left;
@@ -44,7 +41,7 @@ public class TweenMaker : MonoBehaviour
                     setter: (value) => pos = value,
                     duration: duration,
                     endValue: Vector3.right);
-                tween.onComplete += onComplete;
+                tween.onComplete += onTweenComplete;
                 Profiler.EndSample();
 
                 if (++createdThisFrame >= createPerFrame)
