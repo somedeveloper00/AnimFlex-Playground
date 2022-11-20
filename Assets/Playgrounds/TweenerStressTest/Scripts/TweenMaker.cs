@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections;
+using AnimFlex.Tweening;
 using UnityEngine;
 using UnityEngine.Profiling;
-using Tweener = AnimFlex.Tweener.Tweener;
 
 public class TweenMaker : MonoBehaviour
 {

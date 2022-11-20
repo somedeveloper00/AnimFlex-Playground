@@ -1,4 +1,4 @@
-using AnimFlex.Tweener;
+using AnimFlex.Tweening;
 using UnityEngine;
 
 public class PointsMover : MonoBehaviour
